@@ -1,0 +1,61 @@
+body {
+  background-color: #e2d081;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: burlywood;
+  background-color: rgb(207, 87, 87);
+  font-size: 80px;
+}
+#tombola {
+  text-align: center;
+}
+
+#numeroEstratto {
+  background-color: rgb(112, 151, 202);
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#griglia {
+  background-color: #e2d081;
+  display: grid;
+  grid-template-columns: repeat(10, 2fr);
+  gap: 15px;
+}
+
+.cella {
+  width: 70px;
+  height: 50px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.cella:hover {
+  box-shadow: 4px 4px 8px rgba(131, 31, 31, 0.7);
+}
+.cella.estratto {
+  background-color: #39b63f;
+  color: #fff;
+}
+
+button {
+  background-color: brown;
+  margin-top: 50px;
+  font-size: 18px;
+  padding: 20px 30px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
